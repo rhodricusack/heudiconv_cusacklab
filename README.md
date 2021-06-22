@@ -1,3 +1,5 @@
+# First use of heudiconv on TCIN data
+
 I used the file dicominfo_ses-001.tsv to set up heuristic.py appropriately, but you shouldn't need it now.
 
 Throughout the following, replace [your-study-root] with the where the data will be.
