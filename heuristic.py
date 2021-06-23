@@ -24,6 +24,5 @@ def infotodict(seqinfo):
             info[func_video].append(s.series_id)
         if (s.dim1 == 70) and (s.dim2 == 64) and ('ep2d_bold_moco_s4_post_ch64_Pictures' in s.protocol_name):
             info[func_pictures].append(s.series_id)
-    print("*********RHODRI")
-    print(info)
+
     return info
