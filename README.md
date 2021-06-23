@@ -16,3 +16,7 @@ Copy the heuristic.py file from this repository into this folder
 
 docker run --rm -it -v [your-study-root]:/base nipy/heudiconv:latest -d /base/dicoms/sub-{subject}/ses-{session}//.dcm -o /base/Nifti/ -f /base/Nifti/code/heuristic.py -s 01 -ss 001 -c dcm2niix -b --overwrite
  
+ 
+One thing that confused me during development: some of the files in /base/Nifti/.heudiconv cause it to cache, so changes to heuristic.py do not get applied. I think due to this:  
+  INFO: Reloading existing filegroup.json because /base/Nifti/.heudiconv/01/ses-001/info/01_ses-001.edit.txt exists
+To fix this, rm -rf [your-study-root]/Nifti/.heudiconv
