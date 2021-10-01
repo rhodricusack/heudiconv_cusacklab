@@ -1,3 +1,6 @@
+# 2021-10-01
+Adapted to function for FOUNDCOG - new heuristic for the func, anat, dwi and fmap scans.
+
 # First use of heudiconv on TCIN data
 
 I used the file dicominfo_ses-001.tsv to set up heuristic.py appropriately, but you shouldn't need it now.

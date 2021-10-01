@@ -14,7 +14,7 @@ def infotodict(seqinfo):
     subindex: sub index within group
     """
     anat = create_key('anat/sub-{subject}_{session}_run-00{item:01d}_T1w')
-    func_video = create_key('func/sub-{subject}_{session}_dir-AP_task-video_run-00{item:01d}_bold')
+    func_video = create_key('func/sub-{subject}_{session}_dir-AP_task-videos_run-00{item:01d}_bold')
     func_pictures = create_key('func/sub-{subject}_{session}_dir-AP_task-pictures_run-00{item:01d}_bold')
     func_rest5 = create_key('func/sub-{subject}_{session}_dir-AP_task-rest5_run-00{item:01d}_bold')
     func_rest10 = create_key('func/sub-{subject}_{session}_dir-AP_task-rest10_run-00{item:01d}_bold')

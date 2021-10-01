@@ -12,8 +12,8 @@ allsubjdicom = glob.glob(path.join(dcmpth,'*_RC_FOUNDCOG'))
 for subjdicom in allsubjdicom:
     flds = path.basename(subjdicom).split('_') 
     # bids descriptor for this subject
-    sub = ''.join(flds[:2]) # removed _ (e.g., ICN_2 -> ICN2) as underscore typically splits fields in bids
-
+    sub = '_'.join(flds[:2])
+    
     # Each session for this subject
     allsessdicom = glob.glob(subjdicom+'/*')
     allsessdicom.sort() # sessions in ascending order by time
